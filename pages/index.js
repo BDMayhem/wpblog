@@ -1,5 +1,4 @@
 import React from 'react';
-import DefaultLayout from '../layouts';
 import Link from 'next/link';
 import axios from 'axios'
 import { WP_API_URL } from '../config'
@@ -12,7 +11,7 @@ export default class extends React.Component {
 
   render() {
     return(
-      <DefaultLayout>
+      <React.Fragment>
         <h1>Posts!</h1>
         <ul>
           {this.props.posts.map( post => 
@@ -29,7 +28,7 @@ export default class extends React.Component {
             </li>
           )}
         </ul>
-      </DefaultLayout>
+      </React.Fragment>
     )
   }
 }
