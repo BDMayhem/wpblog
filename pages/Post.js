@@ -4,7 +4,6 @@ import { WP_API_URL } from '../config'
 
 const PostPage = ({ post }) => (
   <div>
-    Hi!
     <h1>{post.title.rendered}</h1>
     <article
       className="entry-content"
