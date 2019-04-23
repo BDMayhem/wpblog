@@ -3,13 +3,13 @@ import axios from 'axios'
 import { WP_API_URL } from '../config'
 
 const PostPage = ({ post }) => (
-  <React.Fragment>
+  <div>
     <h1>{post.title.rendered}</h1>
     <article
       className="entry-content"
       dangerouslySetInnerHTML={{__html: post.content.rendered}}
     />
-  </React.Fragment>
+  </div>
 )
 
 PostPage.getInitialProps = async (context) => {
